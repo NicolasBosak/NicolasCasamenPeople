@@ -1,4 +1,4 @@
-﻿using People.Models;
+﻿using People.NCModels;
 using System.Collections.Generic;
 
 namespace People;
@@ -23,7 +23,7 @@ public partial class MainPage : ContentPage
     {
         statusMessage.Text = "";
 
-        List<Person> people = App.PersonRepo.GetAllPeople();
+        List<NCPerson> people = App.PersonRepo.GetAllPeople();
         peopleList.ItemsSource = people;
     }
 
