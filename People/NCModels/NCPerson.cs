@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace People.NCModels
 {
     [Table("people")]
-    internal class NCPerson
+    public class NCPerson
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
